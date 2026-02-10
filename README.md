@@ -16,6 +16,7 @@ driver_detection/
 │ ├── safe/
 │ └── unsafe/
 |--- csv file
+|--- model.pkl
 ├── image_to_numeric_data.ipynb
 ├── model_training.ipynb
 └── model_testing.ipynb
