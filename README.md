@@ -32,7 +32,8 @@ Contains images where the driver is distracted, sleepy, yawning, or unsafe.
 ---
 
 ## How the project works
-
+## download sample dataset from this link
+https://drive.google.com/drive/folders/1tmh7KI5H11NyTc7oQXthWy0JcgKMrDWL?usp=sharing
 ### 1. Feature Extraction (Image → Numeric Data)
 Notebook: **image_to_numeric_data.ipynb**
 
