@@ -1,5 +1,8 @@
 import cv2
 import mediapipe as mp
+
+mp_face_mesh = mp.solutions.face_mesh
+mp_hands = mp.solutions.hands
 import numpy as np
 import time
 import joblib
@@ -89,15 +92,12 @@ class DriverMonitorTransformer(VideoTransformerBase):
         except:
             self.model = None
             
-        self.mp_face_mesh = mp.solutions.face_mesh
-        self.mp_hands = mp.solutions.hands
-        
-        self.face_mesh = self.mp_face_mesh.FaceMesh(
+        self.face_mesh = mp_face_mesh.FaceMesh(
             static_image_mode=False,
             refine_landmarks=True,
             max_num_faces=1
         )
-        self.hands = self.mp_hands.Hands(
+        self.hands = mp_hands.Hands(
             static_image_mode=False,
             max_num_hands=1
         )
