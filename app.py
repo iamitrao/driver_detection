@@ -1,8 +1,7 @@
 import cv2
 import mediapipe as mp
-
-mp_face_mesh = mp.solutions.face_mesh
-mp_hands = mp.solutions.hands
+from mediapipe.python.solutions import face_mesh as mp_face_mesh
+from mediapipe.python.solutions import hands as mp_hands
 import numpy as np
 import time
 import joblib
